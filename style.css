@@ -1,58 +1,137 @@
 body {
-    background-color:rgb(255, 241, 178);
     display: flex;
-    margin: 1%;
-    ::selection{
-        color: white;
-        background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+    ::selection {
+        color: rgba(0, 0, 0, 0.8);
+        background: rgba(255, 255, 255, 0.3);
     }
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: Arial,
+    Helvetica,
+    sans-serif,
+    Helvetica,
+    sans-serif;
+}
+html .back-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    object-fit: cover;
+    object-position: center;
 }
 
 #navega {
-    background-color: rgb(241, 165, 71);
-    width: 500px;
-    height: 90vh;
+    top: 0;
+    align-self: center;
+    width: 30vw;
+    height: 110vh;
     text-align: center;
     align-items: center;
-    box-shadow: 10px 10px rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    z-index: 9999;
+    position: fixed;
 }
-main{
-    margin: 1% 2% ;
-    color: rgb(241, 165, 71);
-    text-shadow: 2px 2px black;
+#navega:hover{
+    cursor: pointer;
+}
+
+.glass {
+    /* Cor de fundo com transparência */
+    background: rgba(255, 255, 255, 0.2);
+    /* O efeito de desfoque (principal) */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Sombra para profundidade */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.GlassSection {
+    /* Cor de fundo com transparência */
+    background: rgba(255, 255, 255, 0.1);
+    /* O efeito de desfoque (principal) */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* Sombra para profundidade */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.NavegaSide {
+    left: -31vw;
+    transition: left 0.4s ease-in-out;
+    padding: 20px;
+}
+
+.NavegaSide.aberta {
+    left: 0%;
+}
+
+main {
+    margin: 1% 2%;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
     font-size: large;
     font-weight: bolder;
 }
-.logo{
-    width: 65%;
+
+.logo {
+    width: 48%;
     margin-top: 10%;
-    box-shadow: 10px 10px rgb(0, 0, 0);
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
-a{
-background-color: bisque;
-margin: 4%;
-width: 90%;
-height: 9%;
-box-shadow: 5px 5px rgb(0, 0, 0);
-border-radius: 10px;
-transition: all 0.3s;
-text-decoration: none;
-display: flex;
-align-items: center;
-justify-content: center;
-color: rgb(0, 0, 0);
-font-size: 150%;
-font-weight: bolder;
+a {
+    background-color: bisque;
+    margin: 4%;
+    width: 90%;
+    height: 9%;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    border-radius: 60px;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 150%;
+    font-weight: bolder;
 }
-a:hover{
-box-shadow: 0px 00px rgba(0, 0, 0, 0.404);
-width: 92%;
-height: 11%;
-text-shadow: 0px 0px black;
+
+a:hover {
+    box-shadow: 0px 00px rgba(0, 0, 0, 0.404);
+    color: rgba(255, 255, 255, 0.6);
+    width: 92%;
+    height: 11%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.4);
+}
+section{
+    height: 20%;
+    border-radius: 20px;
+    padding: 0.1rem;
+    margin-bottom: 2%;
+    font-size: 1em;
+}
+p{
+    margin: 2%;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: 30%;
+}
+li{
+    margin: 2%;
+    font-size: 1.5rem;
+}
+
+footer{
+    padding: 2rem;
+    clear: both;
 }

@@ -7,78 +7,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
-    <header id="navega">
+    <video autoplay loop muted poster="imagens/fundo.png" class="back-video">
+        <source src="imagens/fundo.mp4" type="video/mp4">
+    </video>
+    <header id="navega" onclick="toggleNavega()" class="NavegaSide glass">
         <img src="imagens/pfp.jpg" alt="Profile Pic" class="logo">
-        <h1 style="color: white; text-shadow: 3px 3px black; font-size: 2 rem;">Portfólio e Currículo</h1>
+        <h1 style="color: rgba(255, 255, 255, 0.8); text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); font-size: 2 rem;">
+            Portfólio
+            e Currículo</h1>
 
-        <h2 style="margin: 1%;">João Pedro da silva Germano</h2>
-        <a href="index.html">Currículo</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="contato.html">Contatos</a>
+        <h2 style="margin: 1%; color: rgba(0, 0, 0, 0.7);">João Pedro da silva Germano</h2>
+        <a class="glass" href="index.html">Currículo</a>
+        <a class="glass" href="portfolio.html">Portfólio</a>
+        <a class="glass" href="contato.html">Contatos</a>
     </header>
+    <div>
+        <main>
+            <section class="GlassSection">
+                <p>Informações Pessoais</p>
+                <ul>
+                    <li>Rua professor pinheiro domingues, São Paulo, SP, 11948600246, germanounibes@proton.me,
+                        Brasileiro e
+                        Solteiro
+                    </li>
+                </ul>
+            </section>
 
-    <main>
-        <p>Informações Pessoais</p>
-        <ul>
-            <li>Rua professor pinheiro domingues, São Paulo, SP, 11948600246, germanounibes@proton.me, Brasileiro e
-                Solteiro
-            </li>
-        </ul>
+            <section class="GlassSection">
+                <p>Objetivo</p>
+                <ul>
+                    <li>Gerar coisas novas para o mundo e sociedade, adoro criar e evoluir as coisas.</li>
+                </ul>
+            </section>
 
-        <p>Objetivo</p>
-        <ul>
-            <li>Gerar coisas novas para o mundo e sociedade, adoro criar e evoluir as coisas.</li>
-        </ul>
+            <section class="GlassSection">
+                <p>Resumo das Habilidades</p>
+                <ul>
+                    <li>Eu sou um apaixonado por criação, inovação e evolução. Adoro robótica, informatica, marketing,
+                        audiovisual,
+                        design e
+                        praticamente qualquer coisa que deixe trazer algo feito por mim ao mundo.</li>
 
-        <p>Resumo das Habilidades</p>
-        <ul>
-            <li>Eu sou um apaixonado por criação, inovação e evolução. Adoro robótica, informatica, marketing,
-                audiovisual,
-                design e
-                praticamente qualquer coisa que deixe trazer algo feito por mim ao mundo.</li>
+                    <li>Tenho experiência com HTML, CSS, JS, AI, Arduino, Esp32, Mídias Sociais e Sempre Estou
+                        Aprendendo
+                        algo
+                        Novo.
+                    </li>
+                </ul>
+            </section>
 
-            <li>Tenho experiência com HTML, CSS, JS, AI, Arduino, Esp32, Mídias Sociais e Sempre Estou Aprendendo algo
-                Novo.
-            </li>
-        </ul>
+            <section class="GlassSection">
+                <p>Formação Acadêmica</p>
+                <ul>
+                    <li>Ensino Médio Completo</li>
+                </ul>
+            </section>
 
-        <p>Formação Acadêmica</p>
-        <ul>
-            <li>Ensino Médio Completo</li>
-        </ul>
+            <section class="GlassSection">
+                <p>Idiomas</p>
+                <ul>
+                    <li>Inglês-Avançado</li>
+                </ul>
+            </section>
 
-        <p>Idiomas</p>
-        <ul>
-            <li>Inglês-Avançado</li>
-        </ul>
+            <section class="GlassSection">
+                <p>Conhecimento em Tecnologia</p>
+                <ul>
+                    <li>(Unibes - 2026),Rotinas de Escritótio(Pacote Office, Sistemas Operacionais e Softwares
+                        empresariais),
+                        Web
+                        design
+                        -
+                        Front-end (HTML5, CSS3 E Javascript) - 400h</li>
+                </ul>
+            </section>
 
-        <p>Conhecimento em Tecnologia</p>
-        <ul>
-            <li>(Unibes - 2026),Rotinas de Escritótio(Pacote Office, Sistemas Operacionais e Softwares empresariais),
-                Web
-                design
-                -
-                Front-end (HTML5, CSS3 E Javascript) - 400h</li>
-        </ul>
+            <section class="GlassSection">
+                <p>Experiência profissional</p>
+                <ul>
+                    <li>Editor Audiovisual Para Social Media</li>
+                </ul>
+            </section>
 
-        <p>Experiência profissional</p>
-        <ul>
-            <li>Editor Audiovisual Para Social Media</li>
-        </ul>
+            <section class="GlassSection">
+                <p>Formação Complementar</p>
+                <ul>
+                    <li>Técnico em Desenvolvimento de Sistemas pela ETEC professor camargo aranha</li>
+                </ul>
+            </section>
+        </main>
 
-        <p>Formação Complementar</p>
-        <ul>
-            <li>Técnico em Desenvolvimento de Sistemas pela ETEC professor camargo aranha</li>
-        </ul>
-    </main>
-
-    <footer>
-        Portfólio - 2026 João Germano
-    </footer>
+        <footer>
+            Portfólio - 2026 João Germano
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
