@@ -1,9 +1,10 @@
 body {
     display: flex;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     background-attachment: fixed;
 
     ::selection {
@@ -17,6 +18,7 @@ body {
     Helvetica,
     sans-serif;
 }
+
 html .back-video {
     position: fixed;
     top: 0;
@@ -40,7 +42,8 @@ html .back-video {
     z-index: 9999;
     position: fixed;
 }
-#navega:hover{
+
+#navega:hover {
     cursor: pointer;
 }
 
@@ -53,15 +56,7 @@ html .back-video {
     /* Sombra para profundidade */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.GlassSection {
-    /* Cor de fundo com transparência */
-    background: rgba(255, 255, 255, 0.1);
-    /* O efeito de desfoque (principal) */
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    /* Sombra para profundidade */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+
 .NavegaSide {
     left: -31vw;
     transition: left 0.4s ease-in-out;
@@ -81,7 +76,7 @@ main {
 }
 
 .logo {
-    width: 48%;
+    width: 40%;
     margin-top: 10%;
     border-radius: 50%;
 }
@@ -112,26 +107,57 @@ a:hover {
     backdrop-filter: blur(1px);
     background: rgba(255, 255, 255, 0.4);
 }
-section{
+
+section {
     height: 20%;
+    color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     padding: 0.1rem;
     margin-bottom: 2%;
     font-size: 1em;
+    transition: all 0.3s ease;
 }
-p{
+
+.GlassSection {
+    /* Cor de fundo com transparência */
+    background: rgba(255, 255, 255, 0.1);
+    /* O efeito de desfoque (principal) */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    /* Sombra para profundidade */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.GlassSection:hover {
+    /* Cor de fundo com transparência */
+    background: rgba(255, 255, 255, 0.3);
+    /* O efeito de desfoque (principal) */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* Sombra para profundidade */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+p {
     margin: 2%;
     font-size: 2.5rem;
     font-weight: bolder;
-    text-decoration: underline;
-    text-underline-offset: 30%;
 }
-li{
+
+li {
+    color: rgba(200, 200, 200, 0.8);
     margin: 2%;
     font-size: 1.5rem;
 }
 
-footer{
+footer {
     padding: 2rem;
     clear: both;
+    background-color: aqua;
+}
+
+#relogio {
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+    font-size: 15rem;
 }
