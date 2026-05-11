@@ -6,6 +6,7 @@ body {
     background-position: center;
     min-height: 100vh;
     background-attachment: fixed;
+    background-image: url(imagens/fundo.png);
 
     ::selection {
         color: rgba(0, 0, 0, 0.8);
@@ -17,17 +18,6 @@ body {
     sans-serif,
     Helvetica,
     sans-serif;
-}
-
-html .back-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -100;
-    object-fit: cover;
-    object-position: center;
 }
 
 #navega {
@@ -59,7 +49,7 @@ html .back-video {
 
 .NavegaSide {
     left: -31vw;
-    transition: left 0.4s ease-in-out;
+    transition: left 0.1s ease-in;
     padding: 20px;
 }
 
