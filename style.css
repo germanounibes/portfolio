@@ -65,6 +65,7 @@ main {
     font-weight: bolder;
     display: flex;
     flex-wrap: wrap;
+justify-content: center;
 }
 
 .logo {
@@ -102,13 +103,13 @@ a:hover {
 
 section {
     height: 40vh;
-    width: 45%;
+    width: 40vw;
     color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     padding: 0.1rem;
     margin: 0% 1% 2% 2%;
     font-size: 1em;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;  
 }
 
 .GlassSection {
@@ -133,14 +134,14 @@ section {
 
 p {
     margin: 2%;
-    font-size: clamp(2.5vw, 2.5vw, 2.5vw);
+    font-size: clamp(2.5vw, 2.5vh, 2.5vh);
     font-weight: bolder;
 }
 
 li {
     color: rgba(200, 200, 200, 0.8);
     margin: 2%;
-    font-size: clamp(1.5vw, 1.5vw, 1.5vw);
+    font-size: clamp(1.5vw, 1.5vh, 1.5vh);
 }
 
 footer {
@@ -155,5 +156,5 @@ footer {
 #relogio {
     color: rgba(255, 255, 255, 0.6);
     text-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
-    font-size: 10rem;
+    font-size:clamp(200%,800%,500%);
 }
