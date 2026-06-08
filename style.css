@@ -170,5 +170,6 @@ footer {
     transition: all 0.3s;
 }
 .footerimg:hover{
-    width: 5%;
+    width: 3.5%;    
+    filter: invert(100%);
 }
