@@ -1,4 +1,4 @@
-#container_gráfico {
+.container_gráfico {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,14 +9,17 @@
 }
 .conteudo_grafico {
     width: 90rem;
-    max-width: 600px;
+    max-width: 90%;
     margin: 2%;
     border-radius: 100px;
 }
 body {
     align-items: center;
 }
-
+img{
+    border-radius: 10px;
+    width: 90%;
+}
 /* Animações para cada barra */
 @keyframes carregarHTML {
     from { width: 1%; }
@@ -50,7 +53,16 @@ body {
     animation: carregarJS 2s forwards;
 }
 .bar{
-    max-width: 600px;
+    max-width: 90%;
     padding: 2%;
     border-radius: 100px;
+}
+.container_stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    width: 60vw;
+    border-radius: 50px;
+    padding: 3%;
 }
