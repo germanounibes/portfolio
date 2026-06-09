@@ -17,26 +17,6 @@ body {
     align-items: center;
 }
 
-#html_bar {
-    transition: all 0.5s ease;
-    width: 1%;
-}
-
-#css_bar {
-    transition: all 0.5s ease;
-    width: 1%;
-
-}
-#javascript_bar {
-    transition: all 0.5s ease;
-    width: 1%;
-    
-}
-.bar{
-    max-width: 600px;
-    padding: 2%;
-    border-radius: 100px;
-}
 /* Animações para cada barra */
 @keyframes carregarHTML {
     from { width: 1%; }
@@ -51,4 +31,26 @@ body {
 @keyframes carregarJS {
     from { width: 1%; }
     to { width: 40.20%; background-color: rgba(255, 238, 0, 0.5); }
+}
+
+#html_bar {
+    transition: all 0.5s ease;
+    width: 1%;
+    animation: carregarHTML 2s forwards;
+}
+
+#css_bar {
+    transition: all 0.5s ease;
+    width: 1%;
+    animation: carregarCSS 2s forwards;
+}
+#javascript_bar {
+    transition: all 0.5s ease;
+    width: 1%;
+    animation: carregarJS 2s forwards;
+}
+.bar{
+    max-width: 600px;
+    padding: 2%;
+    border-radius: 100px;
 }
