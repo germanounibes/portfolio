@@ -26,7 +26,26 @@
         <h1 id="relogio">00:00:00</h1>
     </center>
 
+<div>
+    <form action="enviar.php" method="POST">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
 
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+        </div>
+
+        <div>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso te ajudar?" required></textarea>
+        </div>
+
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</div>
 
     <footer>
         ©Portfólio - 2026 João Germano💻
