@@ -25,70 +25,103 @@
     <center>
         <h1 id="relogio">00:00:00</h1>
     </center>
-
-    <div>
-
-        <fieldset>
-            <legend>indentificação do usuario</legend>
-
-            <p>
-                <label for="nome">Nome:</label>
-                <input type="text" id="cnome" name="nome" size="50px" placeholder="digite seu nome" requered
-                    autocomplete="on" autofocus>
-            </p>
-
-            <p>
-                <label for="password" name="password">senha:</label>
-                <input type="password" size="40" id="40px" name="senha" id="csenha" placeholder="digite sua senha"
-                    requered autocomplete="on" autofocus maxlength="8" minlength="4">
-            </p>
-
-            <p>
-                <label for="email">E-mail:</label>
-                <input type="email" id="cemail" name="email" size="50px" placeholder="digite seu e-mail" requered
-                    autocomplete="on" autofocus>
-            </p>
-
+    <main>
+        <div class="glass container_contatos">
             <fieldset>
-                <legend>sexo</legend>
+                <legend>indentificação do usuario</legend>
+
                 <p>
-                    <input type="radio" name="sexo" id="cm" value="masculino">
-                    <label for="cm">masculino</label>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="cnome" name="nome" size="50px" placeholder="digite seu nome" requered
+                        autocomplete="on" autofocus>
                 </p>
 
                 <p>
-                    <input type="radio" name="sexo" id="cf" value="feminino">
-                    <label for="cf">feminino</label>
+                    <label for="password" name="password">senha:</label>
+                    <input type="password" size="40" id="40px" name="senha" id="csenha" placeholder="digite sua senha"
+                        requered autocomplete="on" autofocus maxlength="8" minlength="4">
                 </p>
 
                 <p>
-                    <input type="radio" name="sexo" id="co" value="outro">
-                    <label for="co">outro</label>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="cemail" name="email" size="50px" placeholder="digite seu e-mail" requered
+                        autocomplete="on" autofocus>
+                </p>
+
+                <fieldset>
+                    <legend>sexo</legend>
+                    <p>
+                        <input type="radio" name="sexo" id="cm" value="masculino">
+                        <label for="cm">masculino</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="sexo" id="cf" value="feminino">
+                        <label for="cf">feminino</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="sexo" id="co" value="outro">
+                        <label for="co">outro</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" name="data" id="cdata" requered autocomplete="on">
                 </p>
             </fieldset>
 
-            <p>
-                <label for="data">Data de Nascimento:</label>
-                <input type="date" name="data" id="cdata" requered autocomplete="on">
-            </p>
+            <fieldset>
+                <legend>endereço do usuario</legend>
 
-        </fieldset>
-        <fieldset>
-            <legend>endereço do usuario</legend>
+                <p>
+                    <label for="">logadouro</label>
+                    <input type="text" id="cend" name="endereço" size="30px" placeholder="digite seu endereço" requered
+                        autocomplete="on" autofocus>
+                </p>
 
-            <p>
-                <label for="">logadouro</label>
-                <input type="text" id="cend" name="endereço" size="30px" placeholder="digite seu endereço" requered
-                    autocomplete="on" autofocus>
-            </p>
-
-            <p>
-                <label for="num">numero</label>
-                <input type="number" name="num" id="cnum" min="1" max="999" value="1" autofocus requered
-                    autocomplete="on">
-            </p>
-        </fieldset>
-    </div>
+                <p>
+                    <label for="num">numero</label>
+                    <input type="number" name="num" id="cnum" min="1" max="999" value="1" autofocus requered
+                        autocomplete="on">
+                </p>
+                <p>
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado">
+                        <option value="" disabled selected>Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </p>
+            </fieldset>
+        </div>
+    </main>
 
     <footer>
         ©Portfólio - 2026 João Germano💻
