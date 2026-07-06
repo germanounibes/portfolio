@@ -1,0 +1,14 @@
+{
+    "omnify.enabled": true,
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#D75D6A38",
+        "titleBar.inactiveBackground": "#D75D6A1f",
+        "titleBar.border": "#D75D6A",
+        "statusBar.border": "#D75D6A",
+        "statusBar.foreground": "#D75D6A",
+        "activityBar.activeBorder": "#D75D6A",
+        "focusBorder": "#D75D6A80",
+        "__omnify": "fourarms:subtle"
+    },
+    "omnify.alien": "fourarms"
+}
