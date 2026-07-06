@@ -27,27 +27,67 @@
     </center>
 
     <div>
-        <form action="enviar.php" method="POST">
+
+        <fieldset>
+            <legend>indentificação do usuario</legend>
+
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="cnome" name="nome" size="50px" placeholder="digite seu nome" requered
+                    autocomplete="on" autofocus>
+            </p>
+
+            <p>
+                <label for="password" name="password">senha:</label>
+                <input type="password" size="40" id="40px" name="senha" id="csenha" placeholder="digite sua senha"
+                    requered autocomplete="on" autofocus maxlength="8" minlength="4">
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="cemail" name="email" size="50px" placeholder="digite seu e-mail" requered
+                    autocomplete="on" autofocus>
+            </p>
+
             <fieldset>
-                <legend>Entre em contato</legend>
+                <legend>sexo</legend>
                 <p>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    <input type="radio" name="sexo" id="cm" value="masculino">
+                    <label for="cm">masculino</label>
                 </p>
 
                 <p>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    <input type="radio" name="sexo" id="cf" value="feminino">
+                    <label for="cf">feminino</label>
                 </p>
 
                 <p>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso te ajudar?"
-                        required></textarea>
+                    <input type="radio" name="sexo" id="co" value="outro">
+                    <label for="co">outro</label>
                 </p>
-                <button type="submit">Enviar Mensagem</button>
             </fieldset>
-        </form>
+
+            <p>
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" name="data" id="cdata" requered autocomplete="on">
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>endereço do usuario</legend>
+
+            <p>
+                <label for="">logadouro</label>
+                <input type="text" id="cend" name="endereço" size="30px" placeholder="digite seu endereço" requered
+                    autocomplete="on" autofocus>
+            </p>
+
+            <p>
+                <label for="num">numero</label>
+                <input type="number" name="num" id="cnum" min="1" max="999" value="1" autofocus requered
+                    autocomplete="on">
+            </p>
+        </fieldset>
     </div>
 
     <footer>
